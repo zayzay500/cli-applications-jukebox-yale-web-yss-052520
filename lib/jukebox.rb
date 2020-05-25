@@ -1,4 +1,5 @@
 # Add your code here
+require 'pry'
 songs = [
   "Phoenix - 1901",
   "Tokyo Police Club - Wait Up",
@@ -25,6 +26,7 @@ def play(songs)
   input = gets.strip
   
   songs.each_with_index do |song, index|
+    binding.pry
     if input == song
       puts "Playing #{song}"
     elsif input == (index + 1)
