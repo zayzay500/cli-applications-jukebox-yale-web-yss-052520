@@ -29,7 +29,7 @@ def play(songs)
     binding.pry
     if input == song
       puts "Playing #{song}"
-    elsif input == (index + 1)
+    elsif input == (index + 1).to_s
       puts "Playing #{song}"
     else
       puts "Invalid input, please try again"
