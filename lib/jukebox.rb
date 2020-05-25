@@ -26,8 +26,9 @@ def play(songs)
   input = gets.strip
   
   songs.each_with_index do |song, index|
-   # binding.pry
+    binding.pry
     if input == song
+      binding.pry
       puts "Playing #{song}"
     elsif input == (index + 1).to_s
       puts "Playing #{song}"
