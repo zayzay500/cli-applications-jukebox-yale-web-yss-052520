@@ -30,10 +30,13 @@ def play(songs)
     if input == song
       binding.pry
       puts "Playing #{song}"
+      return
     elsif input == (index + 1).to_s
       puts "Playing #{song}"
+      return
     else
       puts "Invalid input, please try again"
+      return
     end
   end
   
